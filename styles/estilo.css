@@ -1,0 +1,59 @@
+* {
+ padding: 0px;
+ margin: 0px;
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    color: #557C55;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+.foto-banner{
+    background-image: url("../asset/img/fondo.jpg");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: top center;
+}
+.img-nav{
+    height: 20px;
+    width: 70px;
+}
+
+
+.menu li:hover {
+    text-decoration: underline;
+    color: #4791d0;
+}
+
+#boton-volver a{
+    text-decoration: none;
+    color: #000;
+}
+#boton-volver{
+    background: linear-gradient(45deg, #4791d0, #c0d4ee);
+    height: 40px;
+    width: 150px;
+}
+
+#enlaces a{
+    font-size: 18px;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+#copy{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+#video-casco {
+    height: 400px;
+}
+
+
+
+

@@ -19,26 +19,24 @@ createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
-    console.log("Exito en el registro")
-    textomodal.textContent="Exito en el registro"
-        modalregistro.show()
-        let formulario=document.getElementById("formregister")
-        formulario.reset() 
-        setTimeout(function(){
-            modalregistro.hide()
-        },4000)
+    alerta.textContent="Exito en el registro"
+    alerta.classList.add("alert-primary")
+    alerta.classList.remove("alert-danger","invisible")
+    setTimeout(function(){
+        alerta.classList.add("invisible")
+        formulario.reset()
+    },2000)
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log("Fallo"+errorMessage)
-    textomodal.textContent="Error en el registro"+errorMessage
-        modalregistro.show()
-
-        setTimeout(function(){
-            modalregistro.hide()
-        },4000)
+    alerta.textContent="Fallamos en el registro: "+errorMessage
+    alerta.classList.add("alert-danger")
+    alerta.classList.remove("alert-primary","invisible")
+    setTimeout(function(){
+        alerta.classList.add("invisible")
+    },2000)
     });
     // ..
   });

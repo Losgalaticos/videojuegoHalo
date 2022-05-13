@@ -25,6 +25,7 @@ createUserWithEmailAndPassword(auth, email, password)
     setTimeout(function(){
         alerta.classList.add("invisible")
         formulario.reset()
+        window.location.href = "index.html"
     },2000)
     // ...
   })

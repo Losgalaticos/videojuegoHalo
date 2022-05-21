@@ -23,9 +23,8 @@ p {
 }
 
 
-.menu li:hover {
-    text-decoration: underline;
-    color: #4791d0;
+ li a:hover {
+    text-decoration: underline solid whitesmoke 3px;
 }
 
 #boton-volver a{

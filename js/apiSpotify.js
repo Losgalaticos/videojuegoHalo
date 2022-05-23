@@ -6,7 +6,7 @@ video={
 
 const uri="https://api.spotify.com/v1/albums/1k8JDdearbBEc2DJ48CRvg/tracks?market=US&limit=12&offset=5"
 
-const token= "Bearer BQBxNhJEKZ7E2XDiPp6jXM47QBQG2g__D-HO6qD_y4yZWaEFKiaMn0QvoJSnLyguOPDIFTBtMfd4YSjjl2CaW2QTq6y-kN_ALwZ2MAs90UuqljD7SSjwbpmHLBtqHVBzsXSYlVnpPa_25GBLqBzxFlph8YNa_n8mazI"
+const token= "Bearer BQCRUVLnRJuy7rty0c3njPJ4z6y6i5YCBNM8mfsb-PX9bvRqHjXw6p2akhSlpyn8nu-e2w9y4bMyNefEljg"
 
 const peticion={
     method:"GET",
@@ -54,8 +54,6 @@ function escucharMusica(albums) {
 
  
 
-
-
    tarjeta.appendChild(videoCancion)
    tarjeta.appendChild(audioCancion)
    tarjeta.appendChild(nombreCancion)
@@ -63,3 +61,41 @@ function escucharMusica(albums) {
    fila.appendChild(columna)   
     })
 }
+
+//Rutina para consumir API con el metodo post
+
+const URIPOST="https://accounts.spotify.com/api/token"
+
+// Almaceno los datos que voy a enviar
+
+let client_id ="client_id=4beb0801c8964d0cba0bdd544f0af297"
+let client_secret ="client_secret=26a2153552ec4141a62b670918121db6"
+let grant_type="grant_type=client_credentials"
+
+//Configurar peticion
+
+const PETICIONPOST={
+  method:"POST",
+  headers:{"Content-Type":"application/x-www-form-urlencoded"
+},
+body:client_id+"&"+client_secret+"&"+grant_type+"&"
+}
+
+//voy al servidor a consumir el servicio
+
+fetch(URIPOST,PETICIONPOST)
+.then(function(resultado) {
+  return resultado.json()
+})
+
+.then(function(resultado) {
+ // console.log(resultado)
+
+  let token=resultado.token_type+' '+resultado.access_token
+ 
+  console.log(token)
+ 
+})
+.catch(function(resultado) {
+  console.log(resultado)
+})

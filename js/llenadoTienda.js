@@ -1,5 +1,3 @@
-export function llenarTienda()
-
 let productosBD=[
 
     {foto:'img/tienda1.jpg',nombre:"Videojuego",precio:100000,descripcion:"Videojuego HALO 5"},
@@ -24,16 +22,16 @@ let productosBD=[
     {foto:'img/tienda20.jpg',nombre:"Figura",precio:80000,descripcion:"Figura"},
 ]
 
-
+    
 let fila=document.getElementById("fila")
+
 productosBD.forEach(function(producto){
 
     let columna=document.createElement("div")
     columna.classList.add("col")
 
     let tarjeta=document.createElement("div")
-    tarjeta.classList.add("card")
-    tarjeta.classList.add("h-100")
+    tarjeta.classList.add("card","h-100","shadow")
 
     let foto=document.createElement("img")
     foto.classList.add("car-img-top")
@@ -57,6 +55,8 @@ productosBD.forEach(function(producto){
     botonProductos.classList.add("btn-outline-success")
     botonProductos.textContent = "Productos"
     botonProductos.setAttribute("type" , "button")
+
+
 
     tarjeta.appendChild(foto)
     tarjeta.appendChild(titulo)

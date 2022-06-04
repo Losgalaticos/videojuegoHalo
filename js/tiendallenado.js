@@ -1,3 +1,5 @@
+export function llenartienda(){
+
 let productosBD=[
 
     {foto:'img/tienda1.jpg',nombre:"Videojuego",precio:100000,descripcion:"Videojuego HALO 5"},
@@ -68,6 +70,4 @@ productosBD.forEach(function(producto){
     
 
 })
-
-
-
+}

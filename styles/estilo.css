@@ -52,6 +52,9 @@ p {
     height: 500px;
 }
 
-
+body{
+    background-image: url("../asset/img/img1.jpg");
+    background-size: 100%;
+}
 
 

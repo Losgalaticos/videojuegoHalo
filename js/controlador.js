@@ -34,6 +34,9 @@ botonAgrgarCarrito.addEventListener("click",function(){
     //Agrego el producto al carrito
     carrito.push(producto)
 
+    //subtotalSS
+    producto.subtotalPro=cantidad*(Number(producto.precio.split("$")[1]))
+
     //Pintar la capsula en el carrito
     let suma=0
     carrito.forEach(function(producto){
@@ -130,5 +133,5 @@ botonVerCarrito.addEventListener("click",function(){
 
     modalcompra.show()
 
-    console.log("Hola mundo")
+
 })

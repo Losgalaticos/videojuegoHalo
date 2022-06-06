@@ -18,8 +18,8 @@ p {
     background-position: top center;
 }
 .img-nav{
-    height: 20px;
-    width: 70px;
+    height: 25px;
+    width: 100px;
 }
 
 
@@ -52,9 +52,5 @@ p {
     height: 500px;
 }
 
-body{
-    background-image: url("../asset/img/img1.jpg");
-    background-size: 100%;
-}
 
 

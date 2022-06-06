@@ -1,5 +1,6 @@
+
 export function ampliarInformacionProducto(evento){
-     
+   
     let producto={}
 
     //llenar la informacion del producto

@@ -1,11 +1,11 @@
-import {llenarTienda} from './tiendallenado.js'
+import{llenartienda} from './tiendallenado.js'
 import {ampliarInformacionProducto} from './ampliarinfo.js'
 
 //creo un producto vacio
 let producto={}
 
 //llamando a tienda llenado
-llenarTienda()
+llenartienda()
 
 let modalinfo = new bootstrap.Modal(document.getElementById('modalinfo'))
 let modalcompra = new bootstrap.Modal(document.getElementById('resumencompra'))
@@ -127,4 +127,6 @@ botonVercarrito.addEventListener("click",function(){
     })
 
     modalcompra.show()
+
+    console.log("Hola mundo")
 })

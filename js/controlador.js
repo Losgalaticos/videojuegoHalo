@@ -21,50 +21,52 @@ contenedorTienda.addEventListener("click",function(evento){
     }
 })
 
-//rurina para añadir un producto al carrito de compras 
+//rutina para añadir un producto al carrito de compras
 let carrito=[]
-let botonAgregarCarrito=document.getElementById("botonadd")
-botonAgregarCarrito.addEventListener("click",function(){
+let botonAgrgarCarrito=document.getElementById("botonadd")
+botonAgrgarCarrito.addEventListener("click",function(){
 
-    //Debo capturar la cantidad y agregar el producto
+    //Debo capturar la cantidad y agregarla al producto
     let cantidad=document.getElementById("CantidadProducto").value
     producto.cantidad=cantidad
 
-    //subtotalSS
-    producto.subtotalPro=cantidad*(Number(producto.precio.split("$")[1]))
-
-    //Agrego el producto ap carro
+   
+    //Agrego el producto al carrito
     carrito.push(producto)
-
-    modalinfo.hide()
 
     //Pintar la capsula en el carrito
     let suma=0
     carrito.forEach(function(producto){
         suma=suma+Number(producto.cantidad)
     })
-
-    console.log(suma)
-    let capsula=document.getElementById("capsula")
-    capsula.classList.remove("invisible")
+    
+    let capsula=document.getElementById("capsula") 
     capsula.textContent=suma
+    capsula.classList.remove("invisible")
+
     console.log(carrito)
+
+    modalinfo.hide()
+
+
 })
 
+//rutina para limpiar
 let limpiar=document.getElementById("limpiar")
-limpiar.addEventListener("click",function(limpiar){
+limpiar.addEventListener("click",function(){
 
     carrito=[]
 
-    let capsula=document.getElementById("capsula")
+    let capsula=document.getElementById("capsula") 
     capsula.classList.add("invisible")
+
 })
 
 //rutina para ver el carrito
-let botonVercarrito=document.getElementById("vercarrito")
-botonVercarrito.addEventListener("click",function(){
+let botonVerCarrito=document.getElementById("vercarrito")
+botonVerCarrito.addEventListener("click",function(){
 
-    //recorrer el carrito y pinatr los productos
+    //recorrer el carrito y pintar los productos
     let base=document.getElementById("basecarro")
 
     base.innerHTML=""

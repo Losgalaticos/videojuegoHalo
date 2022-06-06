@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="styles/tienda.css">
     <link rel="icon" href="./asset/img/icono.ico">
 </head>
-
-
 <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,21 +27,87 @@
               <li class="nav-item">
                 <a class="nav-link active" href="./view/bandaSonora.html">Banda sonora</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="vercarrito">
+                  <i class="bi bi-cart-fill"></i>
+                  <span id="capsula" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
+                    99+
+                  </span>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-  
-
+    
     <main>
-        <div class="container">
-           <div class="row row-cols-1 row-cols-md-5 g-4" id="fila">
-           </div>
+      <div class="container">
+         <div class="row row-cols-1 row-cols-md-5 g-4" id="fila">
+         </div>
+      </div>
+  </main>
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="modalinfo">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tienda HALO 5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <img src="" alt="" class="w-100 img-fluid" id="fotoInfo">
+                </div>
+                <div class="col-8">
+                  <h4 id="tituloInfo"></h4>
+                  <h3 id="precioInfo"></h3>
+                  <p id="cantidadInfo"></p>
+                  <div class="mb-3">
+                    <label  class="form-label">Cantidad:</label>
+                    <input type="number" class="form-control" id="CantidadProducto">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="limpiar">Limpiar</button>
+  
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="botonadd">Añadir al carrito</button>
+          </div>
         </div>
-    </main>
-      
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">TIENDA HALO 5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="basecarro">
+  
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

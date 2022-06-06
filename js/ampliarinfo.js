@@ -7,7 +7,7 @@ export function ampliarInformacionProducto(evento){
     producto.foto=evento.target.parentElement.querySelector("img").src
     producto.nombre=evento.target.parentElement.querySelector("h4").textContent
     producto.precio=evento.target.parentElement.querySelector("h5").textContent
-    producto.decripcion=evento.target.parentElement.querySelector("p").textContent
+    producto.cantidad=evento.target.parentElement.querySelector("h5").textContent
 
     let fotoinfo=document.getElementById("fotoInfo")
    fotoinfo.src=evento.target.parentElement.querySelector("img").src
@@ -18,7 +18,7 @@ export function ampliarInformacionProducto(evento){
    let precioInfo=document.getElementById("precioInfo")
    precioInfo.textContent=evento.target.parentElement.querySelector("h5").textContent
    
-   let descripcionInfo=document.getElementById("descripcionInfo")
+   let descripcionInfo=document.getElementById("cantidadInfo")
    descripcionInfo.textContent=evento.target.parentElement.querySelector("p").textContent
 
    //devolver el producto generdadp

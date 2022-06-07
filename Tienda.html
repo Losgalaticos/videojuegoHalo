@@ -41,14 +41,14 @@
     </header>
     
     <main>
-      <div class="container">
-         <div class="row row-cols-1 row-cols-md-5 g-4" id="fila">
+      <div class="container text-dark">
+         <div class="row row-cols-1 row-cols-md-4 g-4" id="fila">
          </div>
       </div>
   </main>
+
   <section>
-    <!-- Modal -->
-    <div class="modal fade" id="modalinfo">
+    <div class="modal text-dark" id="modalinfo">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -64,7 +64,7 @@
                 <div class="col-8">
                   <h4 id="tituloInfo"></h4>
                   <h3 id="precioInfo"></h3>
-                  <p id="cantidadInfo"></p>
+                  <h6 id="cantidadInfo"></h6>
                   <div class="mb-3">
                     <label  class="form-label">Cantidad:</label>
                     <input type="number" class="form-control" id="CantidadProducto">
@@ -75,20 +75,20 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="limpiar">Limpiar</button>
+            <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal" id="limpiar">Limpiar</button>
   
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" id="botonadd">Añadir al carrito</button>
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-primary" id="botonadd">Añadir al carrito</button>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <section>
+  
     <section>
-      <!-- Modal -->
-        <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal #2-->
+        <div class="modal fade text-dark" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">

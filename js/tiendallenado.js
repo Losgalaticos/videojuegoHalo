@@ -10,7 +10,7 @@ let productosBD=[
     {foto:'img/tienda6.jpg',nombre:"Auriculares",precio:100000,descripcion:"Auriculares HALO"},
     {foto:'img/tienda7.jpg',nombre:"Vaso",precio:50000,descripcion:"Vaso HALO 5"},
     {foto:'img/tienda8.jpg',nombre:"Cojines",precio:70000,descripcion:"Cojines"},
-    {foto:'img/tienda9.jpg',nombre:"Espada de Energia",precio:200000,descripcion:"Espada de Energia"},
+    {foto:'img/tienda9.jpg',nombre:"Espada de Energia",precio:200000,descripcion:"Espada"},
     {foto:'img/tienda10.jpg',nombre:"Camiseta",precio:50000,descripcion:"Camiseta SL 2.0"},
     {foto:'img/tienda11.jpg',nombre:"Pantaloneta",precio:30000,descripcion:"Pantaloneta SL 2.0"},
     {foto:'img/tienda12.jpg',nombre:"Mega Blok",precio:90000,descripcion:"Mega Blok"},

@@ -15,3 +15,103 @@ nav{
 .titulo{
     text-align: center;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #4791d0;
+    font-family: 'Nunito', sans-serif;
+    padding: 0 20px;
+}
+
+.card-conteiner{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #c0d4ee;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0 .2);
+}
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background: #fbfbfb;
+}
+
+.header, .descripcion{
+    padding:  200px;
+    text-align: center;
+}
+.header a{
+    position: relative;
+    display: block;
+}
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0,0,0 .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(0,0,0 .1);
+}
+
+.header h2{
+    color: red;
+}
+
+.header h4{
+    margin-bottom: 20px;
+}
+
+.descripcion{
+    position: relative;
+}
+
+.descripcion p{
+    margin: 20px 30px;
+}
+
+.descripcion .social{
+    margin-top: 25px;
+}
+.descripcion .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: red;
+}
+
+@media (max-width:640px){
+    .card-conteiner{
+        display: block;
+        width: 450px;
+    }
+}
+
+.header{
+    padding: 20px 20px 5px 20px;
+    border: none;
+}
+
+.descripcion{
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+}
+
+.header h4{
+    margin: 0;
+}
+
+
+
+

@@ -5,6 +5,8 @@
 .menu{
  background: linear-gradient(100deg, transparent, #6D8B74,transparent);
 }
+
+
 nav  li a:hover{
     background-color: #6D8B74;
     transition: .1s;

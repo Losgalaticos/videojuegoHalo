@@ -3,19 +3,20 @@
     height: 20px;
 }
 .menu{
- background: linear-gradient(100deg, transparent, #6D8B74,transparent);
+    background: linear-gradient(100deg, transparent, #c0d4ee, transparent);
+
 }
 
-
 nav  li a:hover{
-    background-color: #6D8B74;
+   text-decoration: underline solid 3px;
     transition: .1s;
 }
 nav{
     font-size: 20px;
-}
+} 
 .titulo{
     text-align: center;
+
 }
 *{
     margin: 0;
@@ -23,12 +24,11 @@ nav{
     box-sizing: border-box;
 }
 
-.container{
+.conteiner{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: #4791d0;
+    height: 60vh;
     font-family: 'Nunito', sans-serif;
     padding: 0 20px;
 }
@@ -36,7 +36,7 @@ nav{
 .card-conteiner{
     display: flex;
     width: 600px;
-    height: auto;
+    height: 400px;
     background: #c0d4ee;
     border-radius: 2px;
     box-shadow: 1px 1px 4px 2px rgba(0,0,0 .2);

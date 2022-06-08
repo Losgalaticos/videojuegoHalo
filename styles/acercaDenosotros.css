@@ -37,7 +37,7 @@ nav{
     display: flex;
     width: 600px;
     height: 400px;
-    background: #c0d4ee;
+    background: #22c458;
     border-radius: 2px;
     box-shadow: 1px 1px 4px 2px rgba(0,0,0 .2);
 }
@@ -69,7 +69,7 @@ nav{
 }
 
 .header h2{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .header h4{

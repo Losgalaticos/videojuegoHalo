@@ -6,7 +6,7 @@ video={
 
 const uri="https://api.spotify.com/v1/albums/1k8JDdearbBEc2DJ48CRvg/tracks?market=US&limit=12&offset=5"
 
-const token= "Bearer BQCRUVLnRJuy7rty0c3njPJ4z6y6i5YCBNM8mfsb-PX9bvRqHjXw6p2akhSlpyn8nu-e2w9y4bMyNefEljg"
+const token= "Bearer BQDg5A3c8iJ6W1_SIcCLXObkODcRgeIpmF6sCR7rTRlYhqtd7ikCzYoWWNWBsQe_kdMRDuhOCIX7oCTCElY"
 
 const peticion={
     method:"GET",

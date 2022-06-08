@@ -1,9 +1,16 @@
+body{
+    background: url(../asset/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .img-logo{
     width: 100px;
     height: 20px;
 }
 .menu{
-    background: linear-gradient(100deg, transparent, #c0d4ee, transparent);
+    background: linear-gradient(100deg, transparent, #ffffff, transparent);
 
 }
 
@@ -37,7 +44,7 @@ nav{
     display: flex;
     width: 600px;
     height: 400px;
-    background: #22c458;
+    background: #979797;        
     border-radius: 2px;
     box-shadow: 1px 1px 4px 2px rgba(0,0,0 .2);
 }
